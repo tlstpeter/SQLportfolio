@@ -1,0 +1,27 @@
+CREATE TABLE twitter_feed(id INTEGER PRIMARY KEY AUTOINCREMENT,
+date TEXT,
+time TEXT,
+content TEXT);
+
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-01-2022", "11:59 a.m.","Just made eggs for brekky");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-01-2022", "2:00 p.m.","Running will be the death of me honestly");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-01-2022", "5:59 p.m.","Is it bed time yet...");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-01-2022", "10:59 p.m.","k byeeee");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-02-2022", "9:59 a.m.","What is up today party people?");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-02-2022", "5:04 p.m.","Party at Frans..be there or don't whatever");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-03-2022", "10:00 a.m.","Remind me to never go out again");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-03-2022", "7:03 p.m.","Still recooping, but I am alive");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-04-2022", "11:00 a.m.","Alright gym time");
+INSERT INTO twitter_feed (date, time, content) VALUES ("04-04-2022", "2:04 p.m.","Nothing like a booty burn");
+
+SELECT * FROM twitter_feed;
+
+UPDATE twitter_feed SET content = "Bedtime what is that even..." WHERE content = "Is it bed time yet...";
+
+SELECT * FROM twitter_feed;
+
+DELETE FROM twitter_feed WHERE id= 8;
+
+SELECT * FROM twitter_feed;
+
+

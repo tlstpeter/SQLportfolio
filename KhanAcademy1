@@ -1,0 +1,39 @@
+/** Inventory;
+T Shirt (15.00, 5, Black)
+Jeans (50.00, 10, Dark Denim)
+Shorts (40.00, 10, Light Denim)
+Bikini (45.00, 5, Yellow)
+Fuzzy Socks (10.00, 10, White)
+Winter Boots (80.00, 10, Tan)
+Winter Coat (100.00, 6, Green)
+Chunky Sweater (35.00, 4, Cream)
+Zip Up Hoodie (35.00, 6, Black)
+OnePiece Swim (50.00, 6, Red)
+SweatSuit (85.00, 8, Black)
+Pajama Set (60.00, 5, Pink)
+Tennis Shoes (50.00, 10, White)
+Leggings (40.00, 15, Black)
+Crew Socks (10.00, 10, Black)
+
+CREATE TABLE inventory (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, backstock Integer);
+
+
+INSERT INTO inventory VALUES(1, "T Shirt", 15.00, 5, 5);
+INSERT INTO inventory VALUES(2, "Jeans", 50.00, 10, 6);
+INSERT INTO inventory VALUES(3, "Shorts", 40.00, 10, 4);
+INSERT INTO inventory VALUES(4, "Bikini", 45.00, 5, 6);
+INSERT INTO inventory VALUES(5, "Fuzzy Socks", 10.00, 10, 3);
+INSERT INTO inventory VALUES(6, "Winter Boots", 80.00, 10, 7);
+INSERT INTO inventory VALUES(7, "Winter Coats", 100.00, 6, 8);
+INSERT INTO inventory VALUES(8, "Chunky Sweater", 35.00, 4, 2);
+INSERT INTO inventory VALUES(9, "Zip Up Hoodie", 35.00, 6, 8);
+INSERT INTO inventory VALUES(10, "One Piece Suit", 50.00, 6, 3);
+INSERT INTO inventory VALUES(11, "Sweat Suit", 85.00, 8, 8);
+INSERT INTO inventory VALUES(12, "Pajama Set", 60.00, 5, 3);
+INSERT INTO inventory VALUES(13, "Tennis Shoes", 50.00, 10, 8);
+INSERT INTO inventory VALUES(14, "Leggings", 40.00, 15, 2);
+INSERT INTO inventory VALUES(15, "Crew Socks", 10.00, 10, 3);
+
+SELECT * FROM inventory ORDER BY price;
+
+SELECT SUM(quantity) FROM inventory
